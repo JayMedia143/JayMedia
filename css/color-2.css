@@ -1,0 +1,112 @@
+.art-link.art-color-link {
+  color: #fa00d9;
+}
+
+.art-link.art-color-link:hover {
+  color: #fa00d9;
+}
+.art-btn {
+  background: #fa00d9;
+}
+
+blockquote {
+  background: #fa00d9;
+}
+
+.art-custom-list li:before {
+  border: solid 2px #fa00d9;
+}
+
+.art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp {
+  background: #fa00d9;
+}
+
+.art-info-bar .art-name:hover a {
+  color: #fa00d9;
+}
+
+.art-info-bar .art-knowledge-list li:before {
+  color: #fa00d9;
+}
+
+.art-menu-bar .art-language-change li.art-active-lang {
+  background-color: #fa00d9;
+}
+
+.art-code i {
+  color: #fa00d9;
+}
+
+.art-counter-frame .art-counter-box .art-counter {
+  color: #fa00d9;
+}
+
+.art-counter-frame .art-counter-box .art-counter-plus {
+  color: #fa00d9;
+}
+
+.art-price.art-popular-price:before {
+  background: #fa00d9;
+}
+
+.art-price .art-price-body .art-price-cost .art-number {
+  color: #fa00d9;
+}
+
+.art-price .art-price-body .art-price-list li:before {
+  color: #fa00d9;
+}
+
+.art-price .art-price-body .art-price-list li.art-empty-item:before {
+  color: #fa00d9;
+}
+
+.art-testimonial .art-testimonial-footer .art-star-rate {
+  color: #fa00d9;
+}
+
+.art-slider-navigation
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #fa00d9;
+}
+
+.fancybox-progress {
+  background: #fa00d9;
+}
+
+.fancybox-thumbs__list a:before {
+  border-color: #fa00d9;
+}
+
+.art-timeline .art-timeline-item .art-timeline-mark {
+  border: solid 3px #fa00d9;
+}
+
+.art-form-field textarea.art-active {
+  border-color: #fa00d9;
+}
+
+.art-form-field textarea:focus {
+  border-color: #fa00d9;
+}
+
+.art-contact-form .art-input.art-active + label,
+.art-contact-form .art-input:focus + label {
+  background: #fa00d9;
+}
+
+.art-pagination .art-pagination-center a.art-active-pag {
+  color: #fa00d9;
+}
+
+.art-preloader-load path:last-child {
+  stroke: #fa00d9;
+}
+
+.art-line-progress path:last-child {
+  stroke: #fa00d9;
+}
+
+.art-cirkle-progress path:last-child {
+  stroke: #fa00d9;
+}
