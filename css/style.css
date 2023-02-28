@@ -513,6 +513,7 @@ app marcup
   background-position: center;
   height: 1000px;
   background-size: cover;
+  background-image: url(/img/intro_bg.jpg);
 }
 .art-top-bg .art-top-bg-overlay {
   position: relative;
