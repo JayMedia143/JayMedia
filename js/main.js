@@ -45,7 +45,7 @@ $(function () {
     anime({
       targets: ".art-preloader",
       opacity: [1, 0],
-      delay: 5800,
+      delay: 3800,
       duration: 400,
       easing: "linear",
       complete: function (anim) {
@@ -57,7 +57,7 @@ $(function () {
   var bar = new ProgressBar.Line(preloader, {
     strokeWidth: 1.7,
     easing: "easeInOut",
-    duration: 5000,
+    duration: 3000,
     delay: 1000,
     trailWidth: 1.7,
     svgStyle: {
@@ -82,7 +82,7 @@ $(function () {
 
   anime({
     targets: ".art-counter",
-    delay: 5000,
+    delay: 3000,
     opacity: [1, 1],
     complete: function (anim) {
       $(".art-counter").each(function () {
@@ -105,21 +105,6 @@ $(function () {
   });
 
   // progressbars
-
-  var bar = new ProgressBar.Line(lineprog1, {
-    strokeWidth: 1.72,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 2800,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: "100%",
-      height: "100%",
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
-    },
-  });
 
   bar.animate(0.8);
 
@@ -374,35 +359,6 @@ $(function () {
       damping: 0.05,
       renderByPixel: true,
       continuousScrolling: true,
-    });
-
-    $("#form").submit(function () {
-      $.ajax({
-        type: "POST",
-        url: "mail.php",
-        data: $(this).serialize(),
-      }).done(function () {
-        var tl = anime.timeline({
-          easing: "easeOutExpo",
-        });
-
-        tl.add({
-          targets: ".art-submit",
-          opacity: 0,
-          scale: 0.5,
-        }).add({
-          targets: ".art-success",
-          scale: 1,
-          height: "45px",
-        });
-      });
-      return false;
-    });
-    // Masonry Grid
-    $(".art-grid").isotope({
-      filter: "*",
-      itemSelector: ".art-grid-item",
-      transitionDuration: ".6s",
     });
 
     $(".art-filter a").on("click", function () {

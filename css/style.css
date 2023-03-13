@@ -414,6 +414,7 @@ button
   height: 45px;
   font-size: 11px;
   padding: 0 35px;
+  z-index: 9999;
 }
 .art-btn.art-btn-sm {
   height: 40px;
@@ -559,6 +560,7 @@ app marcup
   text-align: center;
 }
 .art-preloader .art-preloader-content .art-preloader-load {
+  display: none;
   margin-top: 5px;
   width: 200px;
 }
@@ -569,13 +571,6 @@ app marcup
   color: #ffffff !important;
   height: 300px;
   line-height: 350px;
-}
-
-.art-preloader-load path:first-child {
-  stroke: #191923;
-}
-.art-preloader-load path:last-child {
-  stroke: #ffc107;
 }
 
 /* ----- scroll frame ----- */
@@ -1718,6 +1713,7 @@ content
   display: flex;
   padding: 60px;
   width: 100%;
+  height: 350px;
   background-image: -webkit-gradient(
     linear,
     left top,
@@ -1760,14 +1756,16 @@ content
 .art-banner .art-banner-overlay .art-banner-photo {
   width: 390px;
   position: absolute;
-  right: 30px;
+  right: -16px;
   bottom: 0;
 }
 
 /* ----- typing code ----- */
 .art-code {
-  font-family: "Courier Prime", monospace;
-  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #64b5f6;
 }
 .art-code i {
   font-style: normal;
@@ -1782,6 +1780,7 @@ content
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
   opacity: 0;
   position: relative;
@@ -2737,7 +2736,7 @@ content (after 1400px)
     font-size: 36px;
   }
   .art-banner .art-banner-overlay .art-banner-photo {
-    width: 320px;
+    width: 360px;
   }
 }
 /* ------------------------------
@@ -2749,15 +2748,14 @@ content (after 1200px)
   .art-banner .art-banner-overlay .art-banner-title {
     width: 100%;
   }
-  .art-banner .art-banner-overlay .art-banner-photo {
-    display: none;
-  }
-
   .art-grid.art-grid-2-col .art-grid-item {
     width: 50%;
   }
   .art-grid.art-grid-3-col .art-grid-item {
-    width: 50%;
+    width: 33%;
+  }
+  .art-banner-photo {
+    display: none;
   }
 }
 /* ------------------------------
@@ -2782,7 +2780,6 @@ content (after 920px)
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -2792,7 +2789,6 @@ content (after 920px)
   }
   .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a {
     max-width: 200px;
-    margin: 0 auto;
   }
   .art-banner
     .art-banner-overlay
@@ -2851,7 +2847,7 @@ content (after 768px)
     width: 100%;
   }
   .art-grid.art-grid-3-col .art-grid-item {
-    width: 100%;
+    width: 33%;
   }
 
   .art-filter {
@@ -2896,8 +2892,17 @@ content (after 500px)
     width: 100%;
   }
   .art-grid.art-grid-3-col .art-grid-item {
-    width: 100%;
+    width: 33%;
   }
+
+  h5 {
+    font-size: 10px;
+  }
+}
+
+.art-grid .art-grid-item .art-item-description {
+  height: 45px;
+  padding: 10px;
 }
 /* ------------------------------
 
