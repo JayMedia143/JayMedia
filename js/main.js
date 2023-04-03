@@ -140,7 +140,7 @@ $(function () {
     },
   });
 
-  bar.animate(0.9);
+  bar.animate(0.75);
 
   // Contact form
   $(".art-input").keyup(function () {
